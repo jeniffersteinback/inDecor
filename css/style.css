@@ -1,0 +1,74 @@
+:root {
+    --primary: #00baf2;
+    --secondary: #95989a;
+    --text-color: #fff;
+    --text-secondary: #000;
+    --text-tertiary: #5d5d5d;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    min-height: 90vh;
+    background-image: url("../img/hrz-5.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-text-color);
+    margin-bottom: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+#header::before {
+    content: ''; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+    z-index: 1; /* Garante que a sobreposição ficará acima da imagem */
+}
+
+/* Texto acima da camada de transparencia */
+#header > * {
+    position: relative;
+    z-index: 2;
+}
+.container {
+    display: flex;
+    padding: 5rem;
+}
+
+.square{ 
+    
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    height: 100%;
+}
+.square-form{ 
+    align-items: center;
+    gap: 2rem;
+    
+}
+#form {
+    margin-top: 1rem;
+    background-color: var(--secondary);
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.square h1{
+    color: var(--primary);
+}
+.square p{
+    text-transform: uppercase;
+    color: var(--text-color);
+}
