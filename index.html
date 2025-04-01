@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,37 +26,42 @@
           <h1>InDecor</h1>
           <p>um evento para revolucionar a sua criatividade</p>
           <h4>Data do evento:</h4>
-          <h4>Domingo, 28 de Maio, a partir das 14h</h4>
+          <h5>Domingo, 28 de Maio, a partir das 14h</h5>
           
         </span>
-      
-      <!-- Formulário -->
-        <span class="square-form">
-          <div id="form">
-            <p>Preencha o formulário para receber os detalhes do evento</p>
-          <form action="/action_page.php">
-            <label for="name">Nome:</label><br>
-            <input type="text" id="name" name="name" value="Digite o seu nome"><br>
-            <label for="mail">E-mail:</label><br>
-            <input type="text" id="mail" name="mail" value="Digite o seu melhor e-mail"><br><br>
-            <label for="contact">Telefone:</label><br>
-            <input type="text" id="contact" name="contact" value="Número de Whatsapp"><br><br>
-            <table class="table">
-             
-              <div> <label for="iter">Principal Interesse:</label><br>
-              <select name="Selecione" id="iter" class="">
-                <option>Selecione</option>
-              </select> <br>
-  
-            <input type="submit" value="Quero me inscrever">
+
+        <!-- Formulario -->
+         <div class="containerform">
+          <div class="form_box">
+            <h2 class="title">Preencha o formulario para receber os detalhes do evento</h2>
+
+            <form action="" method="get">
+              <p>Nome</p>
+              <input type="text" name="name" placeholder="Digite seu nome">
+              <p>E-mail</p>
+              <input type="email" name="email" placeholder="Digite o seu melhor e-mail">
+              <p>Telefone</p>
+              <input type="text" name="contact" placeholder="Numero de Whatsapp"> 
+              <p>Principal interesse</p> 
+            
+              <!-- O segundo valor estará selecionado inicialmente -->
+                <select name="select">
+                   <option value="Selecione">Selecione</option>
+                </select> <br>
+
+                <button type="submit">Quero me inscrever</button>
+            </form>
+
           </div>
-          </form> 
-        
-        </span>
+         </div>
+      </div>
+    </header>
+
+    <section class="learn">
+      <div class="aprend">
+      <h1>O que você vai aprender:</h1>
       </div>
 
-
-
-
-    </header>
+    </section>
   </body>
+
