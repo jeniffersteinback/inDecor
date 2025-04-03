@@ -234,8 +234,53 @@ padding-top: 2.5rem;
     z-index: 1;
     gap: 9px;
     /* margin-to; */
-    align-content: space-between;
-    
+    align-content: space-between;    
 }
 
 
+.info {
+    background-image: url('../img/hrz-1.jpg');
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    
+    
+}
+.info  {
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+
+/* .info ::before {
+    content: ''; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+    z-index: 1;  /*Garante que a sobreposição ficará acima da imagem*/
+    width: 100%;
+    height: 91%;
+} */
+
+.info >* {
+    position: relative;
+    z-index: 2;
+}
+
+.info p {
+    color: var(--text-color);
+}
+
+    
