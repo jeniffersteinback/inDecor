@@ -20,8 +20,8 @@
     background-size: cover;
     background-position: center;
     color: var(--primary-text-color);
-    margin-bottom: 2rem;
-    background-color: rgba(0, 0, 0, 0.5);
+    
+   
 
     
 }
@@ -33,7 +33,9 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
-    z-index: 1; Garante que a sobreposição ficará acima da imagem
+    z-index: 1;  /*Garante que a sobreposição ficará acima da imagem*/
+    width: 100%;
+    height: 91%;
 }
 
 /* Texto acima da camada de transparencia */
@@ -167,16 +169,73 @@
 
 
 .learn {
-    background-color: var(--text-color);
-    width:100%;
-    height: 90vh;
-    display: flex;
-    align-items: center;
     
+    width:100%;
+    
+    display:inline-block;
+    align-items: center;
+   
 }
 .aprend h1{
- text-align: top;
- padding-bottom: 200%;
- background-color: var(--secondary)
+ text-align: center;
+ padding-bottom: 50px;
+ background-color: var(--secondary);
+ margin-top: auto;
+padding-top: 2.5rem;
 
 }
+
+#imgs{
+    background-color: var(--text-color);
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    height: 90vh;
+    /* align-items: center; */       
+}
+
+
+.circle img{
+    width: 100%;
+    max-width: 55%;
+    margin: 50px;
+    aspect-ratio: 1 / 1; /* Utilizar quando a imagem for retangular*/
+    object-fit: cover;   /* Utilizar quando a imagem for cortar o objeto*/
+    border-radius: 100%;
+    height: auto;
+}
+
+.circle1 img{
+    width: 100%;
+    max-width: 55%;
+    margin: 50px;
+    aspect-ratio: 1 / 1; /* Utilizar quando a imagem for retangular*/
+    object-fit: cover;   /* Utilizar quando a imagem for cortar o objeto*/
+    border-radius: 100%;
+    height: auto;
+}
+
+.circle2 img{
+    width: 100%;
+    max-width: 55%;
+    margin: 50px;
+    aspect-ratio: 1 / 1; /* Utilizar quando a imagem for retangular*/
+    object-fit: cover;   /* Utilizar quando a imagem for cortar o objeto*/
+    border-radius: 100%;
+    height: auto;
+}
+
+.parag{
+    display: inline-flex;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 25%;
+    position: absolute;
+    z-index: 1;
+    gap: 9px;
+    /* margin-to; */
+    align-content: space-between;
+    
+}
+
+
