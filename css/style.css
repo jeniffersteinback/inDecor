@@ -153,6 +153,7 @@
     color: var(--text-color);
     font-size: 25px;
     font-weight: bold;
+    text-align: left;
     padding-top:2rem;
     padding-bottom: 2rem;
 
@@ -181,24 +182,24 @@
  padding-bottom: 50px;
  background-color: var(--secondary);
  margin-top: auto;
-padding-top: 2.5rem;
+ padding-top: 2.5rem;
 
 }
 
 #imgs{
     background-color: var(--text-color);
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     width: 100%;
-    height: 90vh;
+    height: 40vh;
     /* align-items: center; */       
 }
 
 
 .circle img{
     width: 100%;
-    max-width: 55%;
-    margin: 50px;
+    max-width: 40%;
+    margin: 30px;
     aspect-ratio: 1 / 1; /* Utilizar quando a imagem for retangular*/
     object-fit: cover;   /* Utilizar quando a imagem for cortar o objeto*/
     border-radius: 100%;
@@ -207,8 +208,8 @@ padding-top: 2.5rem;
 
 .circle1 img{
     width: 100%;
-    max-width: 55%;
-    margin: 50px;
+    max-width: 40%;
+    margin: 30px;
     aspect-ratio: 1 / 1; /* Utilizar quando a imagem for retangular*/
     object-fit: cover;   /* Utilizar quando a imagem for cortar o objeto*/
     border-radius: 100%;
@@ -217,70 +218,118 @@ padding-top: 2.5rem;
 
 .circle2 img{
     width: 100%;
-    max-width: 55%;
-    margin: 50px;
+    max-width: 40%;
+    margin: 30px;
     aspect-ratio: 1 / 1; /* Utilizar quando a imagem for retangular*/
     object-fit: cover;   /* Utilizar quando a imagem for cortar o objeto*/
     border-radius: 100%;
     height: auto;
+    padding: auto;
 }
 
 .parag{
     display: inline-flex;
-    font-size: 25px;
+    font-size: 16px;
     text-align: center;
-    margin-top: 25%;
+    margin-top: 15%;
     position: absolute;
     z-index: 1;
     gap: 9px;
     /* margin-to; */
     align-content: space-between;    
+    
 }
 
 
-.info {
-    background-image: url('../img/hrz-1.jpg');
-    min-height: 90vh;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
+#local {
     display: flex;
-    
-    
-}
-.info  {
-    min-height: 90vh;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    background-image: url('../img/hrz-1.jpg');
     background-size: cover;
     background-position: center;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-
-}
-
-
-/* .info ::before {
-    content: ''; 
-    position: absolute; 
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
-    z-index: 1;  /*Garante que a sobreposição ficará acima da imagem*/
-    width: 100%;
-    height: 91%;
-} */
-
-.info >* {
     position: relative;
-    z-index: 2;
-}
-
-.info p {
-    color: var(--text-color);
-}
-
+    z-index: 0;
     
+    
+    
+}
+
+
+#local ::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Cor preta com 50% de opacidade */
+    z-index: -1;  /*Garante que a sobreposição ficará acima da imagem*/
+    
+}
+
+.info{
+    display: flex;
+    width: 50%;
+    
+}
+
+.info-i{
+    display: flex;
+    align-items: center;
+    width: 5%;
+    margin: 30px;
+    padding-left: 10px;
+    
+}
+.info-i{
+    color: var(--primary);
+    font-size: 40px
+}
+.info  p {
+    color: var(--text-color);
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+    word-break: break-word;
+    width: 45%;
+    margin-top: 35px;
+    margin-right: 200px;
+
+}
+
+
+.destaque{
+    color: var(--text-color);
+    background-color: none;
+    text-align: left;
+    width: 50%;
+        
+}
+
+.destaque h1{
+    color: var(--primary);
+    text-transform: uppercase;
+    padding: 1rem;
+    
+    
+}
+
+.img{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.foto{
+    align-items: center;
+    
+    gap: 5rem;
+    width:100%;
+    height: 100%;
+    overflow: v;
+    
+}
+
